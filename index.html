@@ -1,15 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<title></title>
 	<meta charset="utf-8">
 </head>
 <body>
-	<form action="exemplo.php" method="get">
-		Name<input type="text" name="nome" placeholder="Escreva Seu Nome"><br>
-		Sobrenome<input type="text" name="sobrenome" placeholder="Escreva Seu Sobrenome"><br>
-		<button type="submit">Enviar</button>
-	</form>
+<div class="row">
+	<div class="col-md-12">
+		<form action="exemplo.php" method="get">
+			Name<input class="form-control" type="text" name="nome" placeholder="Escreva Seu Nome"><br>
+			Sobrenome<input class="form-control" type="text" name="sobrenome" placeholder="Escreva Seu Sobrenome"><br>
+			<input type="hidden" name="acao" value="nome"><br>
+			<button class="btn btn-primary" type="submit">Enviar</button>
+		</form>
+	</div>
+	<div class="col-md-6">
+		<form action="exemplo.php" method="get">
+			<h1>Adição</h1>
+			<input class="form-control" type="number" name="n1" placeholder="Digite um numero!"><br>
+			<input class="form-control" class="form-control" type="number" name="n2" placeholder="Digite um numero!"><br>
+			<input type="hidden" name="acao" value="somar">
+			<button class="btn btn-primary" type="submit">Somar</button>
+		</form>
+	</div>
+	<div class="col-md-6">
+		<form action="exemplo.php" method="get">
+			<h1>Subtraçao</h1>
+			<input class="form-control" type="number" name="n1" placeholder="Digite um numero!"><br>
+			<input class="form-control" type="number" name="n2" placeholder="Digite um numero!"><br>
+			<input type="hidden" name="acao" value="sub">
+			<button class="btn btn-primary" type="submit">Subitrair</button>
+		</form>
+	</div>
+	<div class="col-md-6">
+		<form action="exemplo.php" method="get">
+			<h1>Multiplicação</h1>
+			<input class="form-control" type="number" name="n1" placeholder="Digite um numero!"><br>
+			<input class="form-control" type="number" name="n2" placeholder="Digite um numero!"><br>
+			<input type="hidden" name="acao" value="mult">
+			<button class="btn btn-primary" type="submit">Multiplicar</button>
+		</form>
+	</div>
+	<div class="col-md-6">
+		<form action="exemplo.php" method="get">
+			<h1>Divisão</h1>
+			<input class="form-control" type="number" name="n1" placeholder="Digite um numero!"><br>
+			<input class="form-control" type="number" name="n2" placeholder="Digite um numero!"><br>
+			<input type="hidden" name="acao" value="divi">
+			<button class="btn btn-primary" type="submit">Dividir</button>
+		</form>
+	</div>
+</div>
 
 </body>
 </html>
